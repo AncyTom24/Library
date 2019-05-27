@@ -51,7 +51,8 @@
                 </tr>                
                 <tr>
                     <td>
-                        <asp:Button ID="BtnCheckin" runat="server" Text="Check-in" />
+                        <asp:Button ID="BtnCheckin" runat="server" Text="Check-in" OnClick="BtnCheckin_Click"/>
+                        <asp:Label ID="confirmLabel" runat="server" Visible="false"></asp:Label>
                     </td>
                 </tr>
             </table>

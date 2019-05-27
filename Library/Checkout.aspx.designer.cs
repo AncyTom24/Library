@@ -31,22 +31,22 @@ namespace Library {
         protected global::System.Web.UI.WebControls.TextBox txtStudentID;
         
         /// <summary>
-        /// txtBookName control.
+        /// drpBookName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBookName;
+        protected global::System.Web.UI.WebControls.DropDownList drpBookName;
         
         /// <summary>
-        /// txtBookID control.
+        /// drpBookID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBookID;
+        protected global::System.Web.UI.WebControls.DropDownList drpBookID;
         
         /// <summary>
         /// TxtReturnDate control.
@@ -65,5 +65,14 @@ namespace Library {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCheckOut;
+        
+        /// <summary>
+        /// confirmLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label confirmLabel;
     }
 }

@@ -47,7 +47,8 @@
                 
                 <tr>
                     <td>
-                        <asp:Button ID="btnNewMemb" runat="server" Text="Add New Member" />
+                        <asp:Button ID="btnNewMemb" runat="server" Text="Add New Member" OnClick="btnNewMemb_Click" />
+                        <asp:Label ID="confirmLabel" runat="server" Visible="false"></asp:Label>
                     </td>
                 </tr>
             </table>
