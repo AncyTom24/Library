@@ -16,6 +16,7 @@ namespace LibraryTests
             About abt = new About();
             string details = "Test";
             validation validationObj = new validation();
+            abt.path = @"C:\Users\Anjith\Desktop\Software Testing, Quality Assurance, and Release Management\Project\Library\membDetails.txt";
             //Act
             bool actual = validationObj.writeData(details, abt.path);
             //Assert
@@ -25,7 +26,7 @@ namespace LibraryTests
         public void test_AddMembName()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             About abt = new About();
             abt.name = "";
 
@@ -44,7 +45,7 @@ namespace LibraryTests
         public void test_AddMembStudID()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             About abt = new About();
             abt.studentID = "";
 
@@ -62,7 +63,7 @@ namespace LibraryTests
         public void test_AddMembEmail()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             About abt = new About();
             
             //Act
@@ -80,7 +81,7 @@ namespace LibraryTests
         public void test_AddMembPhone()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             About abt = new About();            
 
             //Act
@@ -98,7 +99,7 @@ namespace LibraryTests
         public void test_AddMembAddress()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             About abt = new About();
 
             //Act
@@ -119,6 +120,7 @@ namespace LibraryTests
             Checkout checkoutObj = new Checkout();
             string details = "Test";
             validation validationObj = new validation();
+            checkoutObj.path = @"C:\Users\Anjith\Desktop\Software Testing, Quality Assurance, and Release Management\Project\Library\checkoutDetails.txt";
             //Act
             bool actual = validationObj.writeData(details, checkoutObj.path);
             //Assert
@@ -128,7 +130,7 @@ namespace LibraryTests
         public void test_CheckOutName()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkout checkoutObj = new Checkout();
 
             //Act
@@ -146,7 +148,7 @@ namespace LibraryTests
         public void test_CheckOutStudID()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkout checkoutObj = new Checkout();
 
             //Act
@@ -163,7 +165,7 @@ namespace LibraryTests
         public void test_CheckoutBookName()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkout checkoutObj = new Checkout();
             
             //Act
@@ -181,7 +183,7 @@ namespace LibraryTests
         public void test_checkoutBookID()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkout checkoutObj = new Checkout();
 
             //Act
@@ -199,7 +201,7 @@ namespace LibraryTests
         public void test_checkOutReturnDate()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkout checkoutObj = new Checkout();
 
             //Act
@@ -222,6 +224,7 @@ namespace LibraryTests
             Checkin checkinObj = new Checkin();
             string details = "Test";
             validation validationObj = new validation();
+            checkinObj.path = @"C:\Users\Anjith\Desktop\Software Testing, Quality Assurance, and Release Management\Project\Library\checkinDetails.txt";
             //Act
             bool actual = validationObj.writeData(details, checkinObj.path);
             //Assert
@@ -231,7 +234,7 @@ namespace LibraryTests
         public void test_CheckinName()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkin checkinObj = new Checkin();
 
             //Act
@@ -249,7 +252,7 @@ namespace LibraryTests
         public void test_CheckinStudID()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkin checkinObj = new Checkin();
 
             //Act
@@ -266,7 +269,7 @@ namespace LibraryTests
         public void test_CheckinBookName()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkin checkinObj = new Checkin();
 
             //Act
@@ -284,7 +287,7 @@ namespace LibraryTests
         public void test_checkinBookID()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkin checkinObj = new Checkin();
 
             //Act
@@ -302,7 +305,7 @@ namespace LibraryTests
         public void test_checkinTakenDate()
         {
             //Arrange
-            bool expected = false;
+            bool expected = true;
             Checkin checkinObj = new Checkin();
 
             //Act
