@@ -29,7 +29,7 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: VSTest@2
-  displayName: 'Test Assemblies'
+  displayName: 'Test Cases'
   inputs:
     testSelector: '$(Parameters.testSelector)'
     testAssemblyVer2: '**\$(BuildConfiguration)\**\*Test*.dll'
