@@ -8,13 +8,16 @@
                     <td>Name</td>
                     <td>
                         <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtName" ErrorMessage="Enter name" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
 
                 </tr>
                 <tr>
                     <td>Student ID</td>
                     <td>
-                        <asp:TextBox ID="txtStudentID" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="txtStudentID" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtStudentID" ErrorMessage="Enter student ID" ForeColor="Red"></asp:RequiredFieldValidator>
+                    </td>
                 </tr>               
                <tr>
                     <td>Book Name</td>
@@ -26,6 +29,7 @@
                             <asp:ListItem Text="Software Testing and Qaulity Assurance" Value="Software Testing and Qaulity Assurance"></asp:ListItem>   
                             <asp:ListItem Text="Interaction Design Concepts" Value="Interaction Design Concepts"></asp:ListItem>
                         </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="drpBookName" ErrorMessage="Select a book" ForeColor="Red" InitialValue="Select Book"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -38,12 +42,14 @@
                             <asp:ListItem Text="AlgBk0003" Value="AlgBk0003"></asp:ListItem>                            
                             <asp:ListItem Text="AlgBk0004" Value="AlgBk0004"></asp:ListItem>
                         </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="drpBookID" ErrorMessage="Select a book ID" ForeColor="Red" InitialValue="Select Book ID"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                  <tr>
                     <td>Return date</td>
                     <td>
                       <asp:TextBox ID="TxtReturnDate" runat="server" TextMode="Date"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TxtReturnDate" ErrorMessage="Select a valid date" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <br />
