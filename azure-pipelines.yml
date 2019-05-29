@@ -29,6 +29,10 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: VSTest@2
+  displayName: 'Test Cases'
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    testSelector: '$(Parameters.testSelector)'
+    testAssemblyVer2: '**\$(BuildConfiguration)\**\*Test*.dll'
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+- task: PublishBuildArtifacts@1
