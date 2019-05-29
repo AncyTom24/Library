@@ -35,3 +35,4 @@ steps:
     testAssemblyVer2: '**\$(BuildConfiguration)\**\*Test*.dll'
     platform: '$(BuildPlatform)'
     configuration: '$(BuildConfiguration)'
+- task: PublishBuildArtifacts@1
